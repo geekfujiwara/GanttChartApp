@@ -1,0 +1,24 @@
+:root{
+  --row-height:40px;
+  --track-height:32px;
+}
+*{box-sizing:border-box;font-family:Segoe UI,system-ui,Arial,sans-serif}
+body{margin:16px;background:#f5f7fb}
+.container{max-width:1000px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+#gantt{position:relative;border:1px solid #e1e6ef;padding:8px;overflow:auto}
+.grid{position:relative}
+.grid .row{display:flex;align-items:center;height:var(--row-height);border-bottom:1px dashed #eef2f7}
+.row .label{width:220px;padding:0 8px;font-size:14px;color:#213547}
+.timeline{flex:1;position:relative;height:var(--row-height)}
+.time-cell{display:inline-block;width:40px;height:100%;border-right:1px solid #f0f4fb;background:linear-gradient(180deg,#fff,#fbfdff)}
+.task-bar{position:absolute;height:var(--track-height);top:4px;border-radius:4px;background:#1f78d1;color:white;padding:6px 8px;cursor:grab;display:flex;align-items:center}
+.task-bar.dragging{opacity:0.85;cursor:grabbing}
+.handle{width:8px;height:100%;background:rgba(0,0,0,0.12);cursor:ew-resize;border-radius:2px}
+.handle.left{margin-right:6px}
+.handle.right{margin-left:6px}
+.tooltip{position:fixed;background:#222;color:#fff;padding:8px;border-radius:4px;font-size:13px;pointer-events:none;z-index:9999}
+.controls{display:flex;gap:8px;margin-bottom:8px}
+.small{font-size:12px;padding:6px 8px}
+.header{display:flex;align-items:center;height:36px;margin-bottom:8px}
+.header .dates{display:flex;gap:4px;margin-left:8px;font-size:13px;color:#445}
+@media (max-width:700px){.row .label{width:140px}}
