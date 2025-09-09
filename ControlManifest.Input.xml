@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/PowerApps/2018/05/manifest">
+  <manifest version="1.0.0">
+    <controlId>GanttChartApp.TAskGantt</controlId>
+    <displayName>TAskGantt</displayName>
+    <description>Gantt chart sample for Power Apps (iframe-based Code App)</description>
+    <version>1.0.0</version>
+    <publisher>geekfujiwara</publisher>
+  </manifest>
+  <resources>
+    <!-- host will be the URL that points to the hosted index.html -->
+  </resources>
+  <data>
+    <property name="tasks" ofType="SingleLine.Text" usage="bound" />
+  </data>
+</control>

@@ -31,6 +31,12 @@ iframe.contentWindow.postMessage({ type: 'init', props: { tasks: [ { id:1, title
 
 4. タスクがユーザー操作で変更されたときは、iframe 内からホストへメッセージを送るように拡張できます（現在は ready シグナルのみ送信しています）。
 
+PCF (Power Apps Component Framework) のメタ情報:
+- DisplayName: TAskGantt
+- コントロール ID の例: GanttChartApp.TAskGantt
+
+注: ここで追加した `ControlManifest.Input.xml` は最小構成の例です。PCF パッケージとしてデプロイするには、公式の PCF 開発手順に従ってプロジェクトを作成してください。
+
 イベント: tasksChanged
 - 説明: ユーザーがバーを移動またはリサイズして mouseup で変更を確定した際、iframe はホストへ tasksChanged メッセージを送ります。
 - 受け取るデータ例:
