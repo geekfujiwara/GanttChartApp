@@ -1,0 +1,12 @@
+{
+  "solutionName": "TAskGanttSolution",
+  "projectName": "TAskGanttControl",
+  "controlName": "TAskGantt",
+  "namespace": "GanttChartApp",
+  "constructorArgs": [],
+  "controlDisplayName": "TAskGantt",
+  "controlDescription": "Gantt chart PCF wrapper for Power Apps",
+  "controlResources": [
+    "../CodeApps/TAskGantt/index.html"
+  ]
+}
